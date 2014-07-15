@@ -1,4 +1,4 @@
-file_name = '/Users/artemypestretsov/downloads/dijkstraData.txt'
+file_name = 'dijkstraData.txt'
 
 def parser(g):
     g = [x for x in g.split("\t")]
@@ -39,11 +39,8 @@ def dijkstra(g,s):
             if (A[v[0]] > A[u] + v[1]):
                 A[v[0]] = A[u] + v[1]
 
-
-    print(A[6],A[36],A[58],A[81],A[98],A[114],A[132],A[164],A[187],A[196])
     return A
 
-    #7,37,59,82,99,115,133,165,188,197
 
 g = {}
 create_graph(g)
