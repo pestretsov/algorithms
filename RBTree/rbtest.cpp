@@ -10,13 +10,13 @@ int main()
         831, 970, 610, 630, 720};
     RedBlackTree tree(ls);
 
-   // RedBlackNode * x = tree.root()->right_->right_->right_;
-    //RedBlackNode * y = tree.root()->left_->right_->right_;
-    //RedBlackNode * z = tree.root()->right_->left_->right_;
-    //cout << x->key_ << std::endl;
-    //tree.delete_node(x);
-    //tree.delete_node(y);
-    //tree.delete_node(z);
+    // RedBlackNode * x = tree.root()->right_->right_->right_;
+    // RedBlackNode * y = tree.root()->left_->right_->right_;
+    // RedBlackNode * z = tree.root()->right_->left_->right_;
+    // cout << x->key_ << std::endl;
+    // tree.delete_node(x);
+    // tree.delete_node(y);
+    // tree.delete_node(z);
 
     tree.delete_node(tree.root());
     tree.delete_node(tree.root());

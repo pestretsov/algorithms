@@ -9,9 +9,9 @@ enum class Color {RED, BLACK};
 struct RedBlackNode {
     Color color_;
     int key_;
-    RedBlackNode * left_;
-    RedBlackNode * right_;
-    RedBlackNode * parent_;
+    RedBlackNode *left_;
+    RedBlackNode *right_;
+    RedBlackNode *parent_;
 
     ~RedBlackNode();
 };
@@ -22,9 +22,9 @@ public:
     RedBlackTree(std::initializer_list<int>);
 
     std::size_t size() {return sz_;};
-    RedBlackNode * root();
-    RedBlackNode * search(int, RedBlackNode *);
-    RedBlackNode * min(RedBlackNode *);
+    RedBlackNode *root();
+    RedBlackNode *search(int, RedBlackNode *);
+    RedBlackNode *min(RedBlackNode *);
 
     void left_rotate(RedBlackNode *);
     void right_rotate(RedBlackNode *);
@@ -39,7 +39,7 @@ public:
 
     ~RedBlackTree();
 private:
-    RedBlackNode * root_;
+    RedBlackNode *root_;
     std::size_t sz_;
 
     void insert_fixup(RedBlackNode *);
