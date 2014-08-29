@@ -267,11 +267,7 @@ void RedBlackTree::DeleteNode(RedBlackNode *z) {
 
 // p == x->parent
 // w == x->parent->left(right)
-<<<<<<< HEAD
 void RedBlackTree::DeleteFixup(RedBlackNode *x, RedBlackNode *p) {
-=======
-void RedBlackTree::delete_fixup(RedBlackNode *x, RedBlackNode *p) {
->>>>>>> FETCH_HEAD
     while (!x || ((x != root_) && (x->color_ == Color::BLACK))) {
         if (x == p->left_) {
 
