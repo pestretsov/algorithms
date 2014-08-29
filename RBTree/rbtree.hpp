@@ -23,28 +23,31 @@ public:
 
     std::size_t size() {return sz_;};
     RedBlackNode *root();
-    RedBlackNode *search(int, RedBlackNode *);
-    RedBlackNode *min(RedBlackNode *);
+    RedBlackNode *Search(int, RedBlackNode *);
+    RedBlackNode *Min(RedBlackNode *);
+    RedBlackNode *Max(RedBlackNode *);
+    RedBlackNode *Successor(RedBlackNode *);
+    RedBlackNode *Predecessor(RedBlackNode *);
 
-    void left_rotate(RedBlackNode *);
-    void right_rotate(RedBlackNode *);
+    void LeftRotate(RedBlackNode *);
+    void RightRotate(RedBlackNode *);
 
-    void insert(int);
-    void delete_node(RedBlackNode *);
+    void Insert(int);
+    void DeleteNode(RedBlackNode *);
 
-    void in_order(RedBlackNode *);
-    void pre_order(RedBlackNode *);
+    void InOrder(RedBlackNode *);
+    void PreOrder(RedBlackNode *);
 
-    int check_property(RedBlackNode *);
+    int CheckProperty(RedBlackNode *);
 
     ~RedBlackTree();
 private:
     RedBlackNode *root_;
     std::size_t sz_;
 
-    void insert_fixup(RedBlackNode *);
-    void delete_fixup(RedBlackNode *, RedBlackNode *);
-    void transplant(RedBlackNode *, RedBlackNode *);
+    void InsertFixup(RedBlackNode *);
+    void DeleteFixup(RedBlackNode *, RedBlackNode *);
+    void Transplant(RedBlackNode *, RedBlackNode *);
 };
 
 //#endif

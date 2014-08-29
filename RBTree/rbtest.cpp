@@ -18,16 +18,18 @@ int main()
     // tree.delete_node(y);
     // tree.delete_node(z);
 
-    tree.delete_node(tree.root());
-    tree.delete_node(tree.root());
-    tree.delete_node(tree.root());
-    cout << tree.size() << "\n";
-    tree.delete_node(tree.root());
-    tree.pre_order(tree.root());
+    tree.DeleteNode(tree.root());
+    tree.DeleteNode(tree.root());
+    tree.DeleteNode(tree.root());
+    //cout << tree.size() << "\n";
+    tree.DeleteNode(tree.root());
+    tree.PreOrder(tree.root());
+    cout << std::endl;
     //cout << tree.root()->right_->left_->right_->key_;
     //cout << tree.root()->right_->left_->key_;
 
-    cout << tree.check_property(tree.root()) << "\n";
-    cout << tree.size() << "\n";
+    //cout << tree.CheckProperty(tree.root()) << "\n";
+    cout << tree.Search(610, tree.root())->key_ << "\n";
+    //cout << tree.size() << "\n";
     return 0;
 }
