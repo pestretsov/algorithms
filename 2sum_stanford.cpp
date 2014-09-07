@@ -26,7 +26,7 @@ void TwoSum(vector<long>& v, set<long>& t, int val, long half_range) {
 }
 
 int main() {
-    fstream f("/Users/artemypestretsov/Downloads/2sum.txt");
+    fstream f("2sum.txt");
     string str;
     vector<long> v;
     set<long> tmp;
